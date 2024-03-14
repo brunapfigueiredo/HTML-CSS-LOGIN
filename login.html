@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="side">
+        <img src="img/undraw_login_re_4vu2.svg" alt="">
+    </section>
+
+    <section class="main">
+        <div class="login-container">
+            <p class="title"> Bem-vindo de volta!</p>
+            <div class="separator"></div>
+            <p class="welcome-message"> Por favor, coloque suas credenciais para prosseguir e ter acesso a todos os nossos serviços.</p>
+
+            <form class="login-form" onsubmit="return validarFormulario()">
+                <div class="form-control">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" id="cpf" placeholder="CPF">
+                    <i class="fas fa-id-card"></i>
+                </div>
+
+                <button class="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
